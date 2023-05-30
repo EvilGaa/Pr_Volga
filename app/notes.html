@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="default-layout">
+            <div class="default-layout__sidebar">
+                <div class="default-layout__logo">
+                    <img src="images/logo.svg" alt="">
+                </div>
+                <div class="default-layout__datepicker" id="datepicker-input"></div>
+                <div class="default-layout__menu">
+                    <div class="menu">
+                        <a class="menu__item">
+                            <img src="images/folder.svg" alt="">
+                            Журнал записи
+                        </a>
+                        <a class="menu__item">
+                            <img src="images/personal-icon.svg" alt="">
+                            Сотрудники
+                        </a>
+                        <a class="menu__item">
+                            <img src="images/user-icon.svg" alt="">
+                            Клиенты
+                        </a>
+                        <a class="menu__item">
+                            <img src="images/service-icon.svg" alt="">
+                            Услуги
+                        </a>
+                        <a class="menu__item">
+                            <img src="images/home-icon.svg" alt="">
+                            Личный кабинет
+                        </a>
+                        <a class="menu__item">
+                            <img src="images/settings-icon.svg" alt="">
+                            Настройки
+                        </a>
+                        <a class="menu__item">
+                            <img src="images/message-icon.svg" alt="">
+                            Уведомления
+                        </a>
+                        <a class="menu__item">
+                            <img src="images/support-icon.svg" alt="">
+                            Тех. Поддержка
+                        </a>
+                    </div>
+                </div>
+                <div class="default-layout__logomini">
+                    <img src="images/logo-mini.svg" alt="">
+                </div>
+            </div>
+            <div class="default-layout__content">
+                <div class="default-layout__header">
+                    <div class="default-layout__title">Журнал записи</div>
+                    <div class="default-layout__controls">
+                        <button class="btn">Добавить запись
+                            <img src="images/Iconplus.svg" alt="">
+                        </button>
+                        <div class="default-layout__avatar avatar" style="background-image: url(images/avatar.jpg);">
+                        </div>
+                    </div>
+                </div>
+                <div class="select--container">
+                    <div class="select--container__userbox">
+                        <select class="select2-users">
+                            <option value="option1">Все сотрудники</option>
+                            <option value="option2">Морозова Елена</option>
+                        </select>
+                        <select class="select2-jobs">
+                            <option value="option1">Все должности</option>
+                            <option value="option2">Разаботчик</option>
+                            <option value="option3">Project manager</option>
+                        </select>
+                        <img class="select--container__icon" src="images/icon-filter.svg" alt="">
+                    </div>
+                    <div class="arrowsbox">
+                        <a class="arrowsbox__left">
+                            <img src="images/main-arrowleft.svg" alt="">
+                        </a>
+                        <a class="arrowsbox__right">
+                            <img src="images/main-arrowright.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="live-notes">
+                    <div class="live-notes__controls">
+                        <div class="live-notes__content" style="height: calc(100vh - 150px); margin-right: -140px;">
+                            <table class="live-notes__table">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th style="position: sticky; top: 0; background-color: #f9f8fc;">
+                                            <div class="table-heading">
+                                                <div class="avatar" style="background-image: url(images/avatar.jpg);">
+                                                </div>
+                                                <div class="table-heading__content">
+                                                    <div class="table-heading__content-name">Морозова Елена </div>
+                                                    <div class="table-heading__content-time">08:00 — 18:00</div>
+                                                    <div class="table-heading__content-post">Project manager</div>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="position: sticky; top: 0; background-color: #f9f8fc;">
+                                            <div class="table-heading">
+                                                <div class="avatar" style="background-image: url(images/avatar.jpg);">
+                                                </div>
+                                                <div class="table-heading__content">
+                                                    <div class="table-heading__content-name">Бексултанов Алишер</div>
+                                                    <div class="table-heading__content-time">08:00 — 18:00</div>
+                                                    <div class="table-heading__content-post">Разаботчик</div>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="position: sticky; top: 0; background-color: #f9f8fc;">
+                                            <div class="table-heading">
+                                                <div class="avatar" style="background-image: url(images/avatar-2.jpg);">
+                                                </div>
+                                                <div class="table-heading__content">
+                                                    <div class="table-heading__content-name">Морозова Елена </div>
+                                                    <div class="table-heading__content-time">08:00 — 18:00</div>
+                                                    <div class="table-heading__content-post">Project manager</div>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="position: sticky; top: 0; background-color: #f9f8fc;">
+                                            <div class="table-heading">
+                                                <div class="avatar" style="background-image: url(images/avatar.jpg);">
+                                                </div>
+                                                <div class="table-heading__content">
+                                                    <div class="table-heading__content-name">Морозова Елена </div>
+                                                    <div class="table-heading__content-time">08:00 — 18:00</div>
+                                                    <div class="table-heading__content-post">Project manager</div>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="position: sticky; top: 0; background-color: #f9f8fc;">
+                                            <div class="table-heading">
+                                                <div class="avatar" style="background-image: url(images/avatar.jpg);">
+                                                </div>
+                                                <div class="table-heading__content">
+                                                    <div class="table-heading__content-name">Морозова Елена </div>
+                                                    <div class="table-heading__content-time">08:00 — 18:00</div>
+                                                    <div class="table-heading__content-post">Project manager</div>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="position: sticky; top: 0; background-color: #f9f8fc;">
+                                            <div class="table-heading">
+                                                <div class="avatar" style="background-image: url(images/avatar.jpg);">
+                                                </div>
+                                                <div class="table-heading__content">
+                                                    <div class="table-heading__content-name">Морозова Елена </div>
+                                                    <div class="table-heading__content-time">08:00 — 18:00</div>
+                                                    <div class="table-heading__content-post">Project manager</div>
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>10</td>
+                                        <td rowspan="2">
+                                            <div class="taskcontent taskcontent--beige">
+                                                <div class="taskcontent__time taskcontent__time--beige">10:00 — 12:00
+                                                </div>
+                                                <div class="taskcontent__info">
+                                                    <div class="taskcontent__theme">Составление брифа</div>
+                                                    <div class="taskcontent__person">Сахаров Евгений</div>
+                                                    <div class="taskcontent__phone">+7 ххх ххх хх хх </div>
+                                                    <div class="taskcontent__comentbox">
+                                                        <img src="images/chaticon.svg" alt="">
+                                                        <div class="taskcontent__comentbox-text">
+                                                            — Комментарий Евгения к записи если есть
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td rowspan="2">
+                                            <div class="taskcontent taskcontent--blue">
+                                                <div class="taskcontent__time taskcontent__time--blue">10:00 — 12:00
+                                                </div>
+                                                <div class="taskcontent__info">
+                                                    <div class="taskcontent__theme">Составление брифа</div>
+                                                    <div class="taskcontent__person">Сахаров Евгений</div>
+                                                    <div class="taskcontent__phone">+7 ххх ххх хх хх </div>
+                                                    <div class="taskcontent__comentbox">
+                                                        <img src="images/chaticon.svg" alt="">
+                                                        <div class="taskcontent__comentbox-text">
+                                                            — Комментарий Евгения к записи если есть
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td rowspan="2">
+                                            <div class="taskcontent taskcontent--green">
+                                                <div class="taskcontent__time taskcontent__time--green">10:00 — 12:00
+                                                </div>
+                                                <div class="taskcontent__info">
+                                                    <div class="taskcontent__theme">Составление брифа</div>
+                                                    <div class="taskcontent__person">Сахаров Евгений</div>
+                                                    <div class="taskcontent__phone">+7 ххх ххх хх хх </div>
+                                                    <div class="taskcontent__comentbox">
+                                                        <img src="images/chaticon.svg" alt="">
+                                                        <div class="taskcontent__comentbox-text">
+                                                            — Комментарий Евгения к записи если есть
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td rowspan="2">
+                                            <div class="taskcontent taskcontent--beige">
+                                                <div class="taskcontent__time taskcontent__time--beige">10:00 — 12:00
+                                                </div>
+                                                <div class="taskcontent__info">
+                                                    <div class="taskcontent__theme">Составление брифа</div>
+                                                    <div class="taskcontent__person">Сахаров Евгений</div>
+                                                    <div class="taskcontent__phone">+7 ххх ххх хх хх </div>
+                                                    <div class="taskcontent__comentbox">
+                                                        <img src="images/chaticon.svg" alt="">
+                                                        <div class="taskcontent__comentbox-text">
+                                                            — Комментарий Евгения к записи если есть
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td rowspan="2">
+                                            <div class="taskcontent taskcontent--blue">
+                                                <div class="taskcontent__time taskcontent__time--blue">10:00 — 12:00
+                                                </div>
+                                                <div class="taskcontent__info">
+                                                    <div class="taskcontent__theme">Составление брифа</div>
+                                                    <div class="taskcontent__person">Сахаров Евгений</div>
+                                                    <div class="taskcontent__phone">+7 ххх ххх хх хх </div>
+                                                    <div class="taskcontent__comentbox">
+                                                        <img src="images/chaticon.svg" alt="">
+                                                        <div class="taskcontent__comentbox-text">
+                                                            — Комментарий Евгения к записи если есть
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td rowspan="2">
+                                            <div class="taskcontent taskcontent--green">
+                                                <div class="taskcontent__time taskcontent__time--green">10:00 — 12:00
+                                                </div>
+                                                <div class="taskcontent__info">
+                                                    <div class="taskcontent__theme">Составление брифа</div>
+                                                    <div class="taskcontent__person">Сахаров Евгений</div>
+                                                    <div class="taskcontent__phone">+7 ххх ххх хх хх </div>
+                                                    <div class="taskcontent__comentbox">
+                                                        <img src="images/chaticon.svg" alt="">
+                                                        <div class="taskcontent__comentbox-text">
+                                                            — Комментарий Евгения к записи если есть
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

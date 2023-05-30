@@ -1,0 +1,15 @@
+.menu {
+    a {
+        cursor: pointer;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        img {
+            margin-right: 8px;
+        }
+    }
+}

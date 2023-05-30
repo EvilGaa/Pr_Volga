@@ -1,0 +1,41 @@
+.air-datepicker.-inline- {
+    border: none;
+    background-color: inherit;
+}
+
+.-weekend- {
+    color: $red;
+}
+
+.air-datepicker-body--day-name,
+.air-datepicker-body--day-name.-weekend- {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 32px;
+    color: #C4C4C4;
+}
+.air-datepicker-nav{
+    border: none;
+}
+.air-datepicker-nav--title,
+.air-datepicker-nav--title i {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 32px;
+    color: #131A29;
+}
+
+.air-datepicker-cell {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.air-datepicker-cell.-current-,
+.air-datepicker-cell.-selected-,
+.air-datepicker-cell.-selected-.-focus-,
+.air-datepicker-cell.-selected-.-current- {
+    background: $red;
+    border-radius: 8px;
+    color: #fff;
+}

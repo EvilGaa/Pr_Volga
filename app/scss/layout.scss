@@ -1,0 +1,57 @@
+.default-layout {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    height: 100vh;
+
+    &__sidebar {
+        width: 247px;
+        background: #F9F8FC;
+        border-radius: 10px;
+    }
+
+    &__logo {
+        margin: 22px 0;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+    &__logomini img{
+        margin: 0 auto;
+        padding-top: 76px;
+    }
+
+    &__datepicker {
+        margin: 27px auto 16px;
+        width: 247px;
+        height: 270px;
+    }
+
+    &__menu {
+        margin: 16px 0;
+        padding: 0 25px;
+    }
+
+    &__content {
+        width: calc(100% - 287px);
+    }
+
+    &__header {
+        margin-bottom: 47px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 130%;
+    }
+
+    &__controls {
+        display: flex;
+        gap: 20px;
+    }
+}

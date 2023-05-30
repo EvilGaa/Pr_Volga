@@ -1,0 +1,27 @@
+.arrowsbox {
+    display: flex;
+    gap: 14px;
+
+    &__left {
+        display: flex;
+        background: #EBEBEB;
+        border-radius: 10px;
+        height: 40px;
+        width: 40px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    &__right {
+        display: flex;
+        background: #FFFFFF;
+        border-radius: 10px;
+        height: 40px;
+        width: 40px;
+        box-shadow: (0px 4px 40px rgba(0, 0, 0, 0.15));
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
