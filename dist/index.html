@@ -2,23 +2,554 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR_Volga</title>
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+    <div class="container">
+        <div class="default-layout">
+            <div class="default-layout__sidebar">
+                <div>
+                    <div class="default-layout__logo">
+                        <img src="images/logo.svg" alt="" width="177" height="52">
+                    </div>
+                    <div class="default-layout__datepicker" id="datepicker-input"></div>
+                    <div class="default-layout__menu">
+                        <div class="menu">
+                            <a class="menu__item" href="javascript:void(0);">
+                                <img src="images/folder.svg" alt="">
+                                Журнал записи
+                            </a>
+                            <a class="menu__item" href="javascript:void(0);">
+                                <img src="images/personal-icon.svg" alt="" width="24" height="24">
+                                Сотрудники
+                            </a>
+                            <a class="menu__item" href="javascript:void(0);">
+                                <img src="images/user-icon.svg" alt="" width="24" height="24">
+                                Клиенты
+                            </a>
+                            <a class="menu__item" href="javascript:void(0);">
+                                <img src="images/service-icon.svg" alt="" width="24" height="24">
+                                Услуги
+                            </a>
+                            <a class="menu__item" href="javascript:void(0);">
+                                <img src="images/home-icon.svg" alt="" width="24" height="24">
+                                Личный кабинет
+                            </a>
+                            <a class="menu__item" href="javascript:void(0);">
+                                <img src="images/settings-icon.svg" alt="" width="24" height="24">
+                                Настройки
+                            </a>
+                            <a class="menu__item" href="javascript:void(0);">
+                                <img src="images/message-icon.svg" alt="" width="24" height="24">
+                                Уведомления
+                            </a>
+                            <a class="menu__item" href="javascript:void(0);">
+                                <img src="images/support-icon.svg" alt="" width="24" height="24">
+                                Тех. Поддержка
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="default-layout__logomini">
+                        <img src="images/logo-mini.svg" alt="" width="196" height="18">
+                    </div>
+                </div>
+            </div>
+            <div class="default-layout__content">
+                <div class="default-layout__header">
+                    <div class="default-layout__title">Журнал записи</div>
+                    <div class="default-layout__controls">
+                        <button class="btn">Добавить запись
+                            <img src="images/Iconplus.svg" alt="" width="33" height="33">
+                        </button>
+                        <div class="default-layout__avatar avatar" style="background-image: url(images/avatar.jpg);">
+                        </div>
+                    </div>
+                </div>
+                <div class="header-mobile">
+                    <div class="header-mobile__boxleft">
+                        <div class="header-mobile__boxleft-inner">
+                            <div class="default-layout__title">Журнал записи</div>
+                            <button class="btn">Добавить запись
+                                <img src="images/Iconplus.svg" alt="" width="33" height="33">
+                            </button>
+                        </div>
+                        <img class="select--container__icon" src="images/icon-filter.svg" alt="" width="24" height="24">
+                    </div>
+                    <div class="header-mobile__boxright">
+                        <button class="header-mobile__burger-button">
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="select--container">
+                    <div class="select--container__userbox">
+                        <select class="select2-users">
+                            <option value="option1">Все сотрудники</option>
+                            <option value="option2">Морозова Елена</option>
+                            <option value="option2">Бексултанов Алишер</option>
+                            <option value="option2">Пупкин Василий</option>
+                        </select>
+                        <select class="select2-jobs">
+                            <option value="option1">Все должности</option>
+                            <option value="option2">Разаботчик</option>
+                            <option value="option3">Project manager</option>
+                            <option value="option3">Смотрящий</option>
+                        </select>
+                        <img class="select--container__icon" src="images/icon-filter.svg" alt="" width="28" height="28">
+                    </div>
+                    <div class="arrowsbox">
+                        <a class="arrowsbox__left" href="javascript:void(0);">
+                            <img src="images/main-arrowleft.svg" alt="" width="9" height="15">
+                        </a>
+                        <a class="arrowsbox__right" href="javascript:void(0);">
+                            <img src="images/main-arrowright.svg" alt="" width="9" height="15">
+                        </a>
+                    </div>
+                </div>
+                <div class="kanban__wrapper">
+                    <div class="kanban__container-header">
+                        <div class="kanban__board-header-item">
+                            <div class="live-notes__header">
+                                <div class="avatar" style="background-image: url(images/avatar.jpg);"></div>
+                                <div class="live-notes__header--info">
+                                    <div class="live-notes__header--name">Морозова Елена</div>
+                                    <div class="live-notes__header--time">08:00 — 18:00</div>
+                                    <div class="live-notes__header--post">Project manager</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kanban__board-header-item">
+                            <div class="live-notes__header">
+                                <div class="avatar" style="background-image: url(images/avatar-3.jpg);"></div>
+                                <div class="live-notes__header--info">
+                                    <div class="live-notes__header--name">Бексултанов Алишер</div>
+                                    <div class="live-notes__header--time">08:00 — 18:00</div>
+                                    <div class="live-notes__header--post">Разаботчик</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kanban__board-header-item">
+                            <div class="live-notes__header">
+                                <div class="avatar" style="background-image: url(images/avatar-2.jpg);"></div>
+                                <div class="live-notes__header--info">
+                                    <div class="live-notes__header--name">Иванова Мария</div>
+                                    <div class="live-notes__header--time">08:00 — 18:00</div>
+                                    <div class="live-notes__header--post">Дизайнер</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kanban__board-header-item">
+                            <div class="live-notes__header">
+                                <div class="avatar" style="background-image: url(images/avatar.jpg);"></div>
+                                <div class="live-notes__header--info">
+                                    <div class="live-notes__header--name">Пупкин Василий</div>
+                                    <div class="live-notes__header--time">17:00 — 18:00</div>
+                                    <div class="live-notes__header--post">Смотрящий</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kanban__board-header-item">
+                            <div class="live-notes__header">
+                                <div class="avatar" style="background-image: url(images/avatar.jpg);"></div>
+                                <div class="live-notes__header--info">
+                                    <div class="live-notes__header--name">Пупкин Василий</div>
+                                    <div class="live-notes__header--time">17:00 — 18:00</div>
+                                    <div class="live-notes__header--post">Смотрящий</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kanban__board-header-item">
+                            <div class="live-notes__header">
+                                <div class="avatar" style="background-image: url(images/avatar.jpg);"></div>
+                                <div class="live-notes__header--info">
+                                    <div class="live-notes__header--name">Пупкин Василий</div>
+                                    <div class="live-notes__header--time">17:00 — 18:00</div>
+                                    <div class="live-notes__header--post">Смотрящий</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kanban__board-header-item">
+                            <div class="live-notes__header">
+                                <div class="avatar" style="background-image: url(images/avatar.jpg);"></div>
+                                <div class="live-notes__header--info">
+                                    <div class="live-notes__header--name">Пупкин Василий</div>
+                                    <div class="live-notes__header--time">17:00 — 18:00</div>
+                                    <div class="live-notes__header--post">Смотрящий</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kanban__board-header-item">
+                            <div class="live-notes__header">
+                                <div class="avatar" style="background-image: url(images/avatar.jpg);"></div>
+                                <div class="live-notes__header--info">
+                                    <div class="live-notes__header--name">Пупкин Василий</div>
+                                    <div class="live-notes__header--time">17:00 — 18:00</div>
+                                    <div class="live-notes__header--post">Смотрящий</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kanban__board-header-item">
+                            <div class="live-notes__header">
+                                <div class="avatar" style="background-image: url(images/avatar.jpg);"></div>
+                                <div class="live-notes__header--info">
+                                    <div class="live-notes__header--name">Морозова Елена</div>
+                                    <div class="live-notes__header--time">08:00 — 18:00</div>
+                                    <div class="live-notes__header--post">Project manager</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kanban__board-header-item">
+                            <div class="live-notes__header">
+                                <div class="avatar" style="background-image: url(images/avatar.jpg);"></div>
+                                <div class="live-notes__header--info">
+                                    <div class="live-notes__header--name">Морозова Елена</div>
+                                    <div class="live-notes__header--time">08:00 — 18:00</div>
+                                    <div class="live-notes__header--post">Project manager</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kanban__board-header-item">
+                            <div class="live-notes__header">
+                                <div class="avatar" style="background-image: url(images/avatar.jpg);"></div>
+                                <div class="live-notes__header--info">
+                                    <div class="live-notes__header--name">Морозова Елена</div>
+                                    <div class="live-notes__header--time">08:00 — 18:00</div>
+                                    <div class="live-notes__header--post">Project manager</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kanban__board-header-item">
+                            <div class="live-notes__header">
+                                <div class="avatar" style="background-image: url(images/avatar.jpg);"></div>
+                                <div class="live-notes__header--info">
+                                    <div class="live-notes__header--name">Морозова Елена</div>
+                                    <div class="live-notes__header--time">08:00 — 18:00</div>
+                                    <div class="live-notes__header--post">Project manager</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kanban__container">
+                        <div class="kanban__timeline-box">
+                            <div class="calendar-grid-week-time-li☺☺nes">
+                                <div class="calendar-grid-week-time-line-hour hour-0">
+                                    <div class="calendar-grid-week-time-line-hour-label">0</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-1">
+                                    <div class="calendar-grid-week-time-line-hour-label">1</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-2">
+                                    <div class="calendar-grid-week-time-line-hour-label">2</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-3">
+                                    <div class="calendar-grid-week-time-line-hour-label">3</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-4">
+                                    <div class="calendar-grid-week-time-line-hour-label">4</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-5">
+                                    <div class="calendar-grid-week-time-line-hour-label">5</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-6">
+                                    <div class="calendar-grid-week-time-line-hour-label">6</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-7">
+                                    <div class="calendar-grid-week-time-line-hour-label">7</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-8">
+                                    <div class="calendar-grid-week-time-line-hour-label">8</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-9">
+                                    <div class="calendar-grid-week-time-line-hour-label">9</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-10">
+                                    <div class="calendar-grid-week-time-line-hour-label">10</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-11">
+                                    <div class="calendar-grid-week-time-line-hour-label">11</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-12">
+                                    <div class="calendar-grid-week-time-line-hour-label">12</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-13">
+                                    <div class="calendar-grid-week-time-line-hour-label">13</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-14">
+                                    <div class="calendar-grid-week-time-line-hour-label">14</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-15">
+                                    <div class="calendar-grid-week-time-line-hour-label">15</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-16">
+                                    <div class="calendar-grid-week-time-line-hour-label">16</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-17">
+                                    <div class="calendar-grid-week-time-line-hour-label">17</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-18">
+                                    <div class="calendar-grid-week-time-line-hour-label">18</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-19">
+                                    <div class="calendar-grid-week-time-line-hour-label">19</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-20">
+                                    <div class="calendar-grid-week-time-line-hour-label">20</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-21">
+                                    <div class="calendar-grid-week-time-line-hour-label">21</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-22">
+                                    <div class="calendar-grid-week-time-line-hour-label">22</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour hour-23">
+                                    <div class="calendar-grid-week-time-line-hour-label">23</div>
+                                </div>
+                                <div class="calendar-grid-week-time-line-hour current-line">
+                                    <div class="timelineconst__box">
+                                        <div class="timelineconst__line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-  <header class="header"></header>
-  <div class="wrapper">
-    <main class="main"></main>
-    <footer class="footer"></footer>
-  </div>
-
-
-
-  <script src="js/main.min.js"></script>
+                        <div class="kanban__board">
+                            <div class="tasks">
+                                <div class="taskcontent taskcontent--beige task-0">
+                                    <div class="taskcontent__time taskcontent__time--beige">10:00 — 12:00</div>
+                                    <div class="taskcontent__info">
+                                        <div class="taskcontent__theme">Составление брифа</div>
+                                        <div class="taskcontent__person">Сахаров Евгений</div>
+                                        <div class="taskcontent__phone">+7 ххх ххх хх хх </div>
+                                        <div class="taskcontent__comentbox">
+                                            <img src="images/chaticon.svg" alt="" width="20" height="20">
+                                            <div class="taskcontent__comentbox-text">
+                                                Комментарий Евгения к записи если есть
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="taskcontent taskcontent--beige task-1">
+                                    <div class="taskcontent__time taskcontent__time--beige">10:00 — 12:00</div>
+                                    <div class="taskcontent__info">
+                                        <div class="taskcontent__theme">Составление брифа</div>
+                                        <div class="taskcontent__person">Сахаров Евгений</div>
+                                        <div class="taskcontent__phone">+7 ххх ххх хх хх </div>
+                                        <div class="taskcontent__comentbox">
+                                            <img src="images/chaticon.svg" alt="" width="20" height="20">
+                                            <div class="taskcontent__comentbox-text">
+                                                Комментарий Евгения к записи если есть
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kanban__board">
+                            <div class="tasks">
+                                <div class="taskcontent taskcontent--blue task-0">
+                                    <div class="taskcontent__time taskcontent__time--blue">10:00 — 12:00</div>
+                                    <div class="taskcontent__info">
+                                        <div class="taskcontent__theme">Составление брифа</div>
+                                        <div class="taskcontent__person">Сахаров Евгений</div>
+                                        <div class="taskcontent__phone">+7 ххх ххх хх хх </div>
+                                        <div class="taskcontent__comentbox">
+                                            <img src="images/chaticon.svg" alt="" width="20" height="20">
+                                            <div class="taskcontent__comentbox-text">
+                                                Комментарий Евгения к записи если есть
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="taskcontent taskcontent--blue task-1">
+                                    <div class="taskcontent__time taskcontent__time--blue">10:00 — 12:00</div>
+                                    <div class="taskcontent__info">
+                                        <div class="taskcontent__theme">Составление брифа</div>
+                                        <div class="taskcontent__person">Сахаров Евгений</div>
+                                        <div class="taskcontent__phone">+7 ххх ххх хх хх </div>
+                                        <div class="taskcontent__comentbox">
+                                            <img src="images/chaticon.svg" alt="" width="20" height="20">
+                                            <div class="taskcontent__comentbox-text">
+                                                Комментарий Евгения к записи если есть
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="taskcontent taskcontent--blue task-2">
+                                    <div class="taskcontent__time taskcontent__time--blue">10:00 — 12:00</div>
+                                    <div class="taskcontent__info">
+                                        <div class="taskcontent__theme">Составление брифа</div>
+                                        <div class="taskcontent__person">Сахаров Евгений</div>
+                                        <div class="taskcontent__phone">+7 ххх ххх хх хх </div>
+                                        <div class="taskcontent__comentbox">
+                                            <img src="images/chaticon.svg" alt="" width="20" height="20">
+                                            <div class="taskcontent__comentbox-text">
+                                                Комментарий Евгения к записи если есть
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="taskcontent taskcontent--blue task-3">
+                                    <div class="taskcontent__time taskcontent__time--blue">10:00 — 12:00</div>
+                                    <div class="taskcontent__info">
+                                        <div class="taskcontent__theme">Составление брифа</div>
+                                        <div class="taskcontent__person">Сахаров Евгений</div>
+                                        <div class="taskcontent__phone">+7 ххх ххх хх хх </div>
+                                        <div class="taskcontent__comentbox">
+                                            <img src="images/chaticon.svg" alt="" width="20" height="20">
+                                            <div class="taskcontent__comentbox-text">
+                                                Комментарий Евгения к записи если есть
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kanban__board">
+                        </div>
+                        <div class="kanban__board">
+                            <div class="tasks">
+                                <div class="taskcontent taskcontent--green task-0">
+                                    <div class="taskcontent__time taskcontent__time--green">10:00 — 12:00</div>
+                                    <div class="taskcontent__info">
+                                        <div class="taskcontent__theme">Составление брифа</div>
+                                        <div class="taskcontent__person">Сахаров Евгений</div>
+                                        <div class="taskcontent__phone">+7 ххх ххх хх хх </div>
+                                        <div class="taskcontent__comentbox">
+                                            <img src="images/chaticon.svg" alt="" width="20" height="20">
+                                            <div class="taskcontent__comentbox-text">
+                                                Комментарий Евгения к записи если есть
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="taskcontent taskcontent--green task-1">
+                                    <div class="taskcontent__time taskcontent__time--green">10:00 — 12:00</div>
+                                    <div class="taskcontent__info">
+                                        <div class="taskcontent__theme">Составление брифа</div>
+                                        <div class="taskcontent__person">Сахаров Евгений</div>
+                                        <div class="taskcontent__phone">+7 ххх ххх хх хх </div>
+                                        <div class="taskcontent__comentbox">
+                                            <img src="images/chaticon.svg" alt="" width="20" height="20">
+                                            <div class="taskcontent__comentbox-text">
+                                                Комментарий Евгения к записи если есть
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="taskcontent taskcontent--green task-2">
+                                    <div class="taskcontent__time taskcontent__time--green">10:00 — 12:00</div>
+                                    <div class="taskcontent__info">
+                                        <div class="taskcontent__theme">Составление брифа</div>
+                                        <div class="taskcontent__person">Сахаров Евгений</div>
+                                        <div class="taskcontent__phone">+7 ххх ххх хх хх </div>
+                                        <div class="taskcontent__comentbox">
+                                            <img src="images/chaticon.svg" alt="" width="20" height="20">
+                                            <div class="taskcontent__comentbox-text">
+                                                Комментарий Евгения к записи если есть
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="taskcontent taskcontent--green task-3">
+                                    <div class="taskcontent__time taskcontent__time--green">10:00 — 12:00</div>
+                                    <div class="taskcontent__info">
+                                        <div class="taskcontent__theme">Составление брифа</div>
+                                        <div class="taskcontent__person">Сахаров Евгений</div>
+                                        <div class="taskcontent__phone">+7 ххх ххх хх хх </div>
+                                        <div class="taskcontent__comentbox">
+                                            <img src="images/chaticon.svg" alt="" width="20" height="20">
+                                            <div class="taskcontent__comentbox-text">
+                                                Комментарий Евгения к записи если есть
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kanban__board">
+                        </div>
+                        <div class="kanban__board">
+                            <div class="tasks">
+                                <div class="taskcontent taskcontent--blue task-2">
+                                    <div class="taskcontent__time taskcontent__time--blue">10:00 — 12:00</div>
+                                    <div class="taskcontent__info">
+                                        <div class="taskcontent__theme">Составление брифа</div>
+                                        <div class="taskcontent__person">Сахаров Евгений</div>
+                                        <div class="taskcontent__phone">+7 ххх ххх хх хх </div>
+                                        <div class="taskcontent__comentbox">
+                                            <img src="images/chaticon.svg" alt="" width="20" height="20">
+                                            <div class="taskcontent__comentbox-text">
+                                                Комментарий Евгения к записи если есть
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kanban__board">
+                        </div>
+                        <div class="kanban__board">
+                        </div>
+                        <div class="kanban__board">
+                        </div>
+                        <div class="kanban__board">
+                        </div>
+                        <div class="kanban__board">
+                        </div>
+                        <div class="kanban__board">
+                        </div>
+                    </div>
+                </div>
+                <div class="arrowsbox-mobile">
+                    <a class="arrowsbox__right" href="javascript:void(0);">
+                        <img src="images/main-arrowright.svg" alt="" width="9" height="15">
+                    </a>
+                </div>
+                <div class="datepicker__mobilebox">
+                    <div class="datepicker__datebox">
+                        <div class="datepicker__day">Пн</div>
+                        <div class="datepicker__number">21</div>
+                    </div>
+                    <div class="datepicker__datebox">
+                        <div class="datepicker__day">Вт</div>
+                        <div class="datepicker__number">22</div>
+                    </div>
+                    <div class="datepicker__datebox">
+                        <div class="datepicker__day">Ср</div>
+                        <div class="datepicker__number">23</div>
+                    </div>
+                    <div class="datepicker__datebox datepicker__datebox--active">
+                        <div class="datepicker__day">Чт</div>
+                        <div class="datepicker__number">24</div>
+                    </div>
+                    <div class="datepicker__datebox">
+                        <div class="datepicker__day">Пт</div>
+                        <div class="datepicker__number">25</div>
+                    </div>
+                    <div class="datepicker__datebox">
+                        <div class="datepicker__day">Сб</div>
+                        <div class="datepicker__number">26</div>
+                    </div>
+                    <div class="datepicker__datebox">
+                        <div class="datepicker__day">Вс</div>
+                        <div class="datepicker__number">27</div>
+                    </div>
+                </div>
+                <div class="mobile-logobox">
+                    <img src="images/logo-mobile.svg" alt="" width="307" height="24">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>

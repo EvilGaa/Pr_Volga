@@ -1,0 +1,29 @@
+.table-heading {
+    display: inline-flex;
+    gap: 12px;
+
+    &__content {
+        text-align: left;
+        width: 139px;
+    }
+
+    &__content-name {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 120%;
+    }
+
+    &__content-time {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+
+    &__content-post {
+        color: $red;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

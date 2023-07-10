@@ -1,0 +1,289 @@
+@media (max-width: 1300px) {
+    .container {
+        margin: 0 0 0 0;
+    }
+
+    .default-layout__controls {
+        margin-right: 0;
+    }
+
+    .arrowsbox {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 920px) {
+    .select--container {
+        display: none;
+    }
+
+    .header-mobile__boxleft-inner .btn {
+        margin-left: 43px;
+    }
+
+    .header-mobile {
+        display: flex;
+        margin-bottom: 17px;
+    }
+
+    .select--container__icon {
+        margin-top: 12px;
+    }
+
+    .default-layout__header {
+        display: none;
+    }
+
+    .kanban__wrapper {
+        height: calc(100vh - 10rem);
+    }
+}
+
+@media (max-width: 740px) {
+    .kanban__wrapper {
+        height: calc(100vh - 9rem);
+    }
+
+    .btn {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 125%;
+        padding: 10px 12px;
+        min-height: auto;
+    }
+
+    .btn img {
+        margin: -8px 0;
+    }
+
+    .select--container__icon {
+        margin-top: 7px;
+    }
+
+    .header-mobile__boxleft {
+        gap: 0;
+    }
+
+    .default-layout__title {
+        font-size: 24px;
+        line-height: 130%;
+    }
+
+    .header-mobile__boxright {
+        margin-top: -5px;
+    }
+}
+
+@media (max-width: 660px) {
+    .container{
+        padding: 0 4px;
+    }
+    .default-layout__sidebar {
+        display: none;
+    }
+
+    .default-layout__content {
+        width: -webkit-fill-available;
+    }
+
+    .kanban__wrapper {
+        height: calc(100vh - 308px);
+    }
+
+    .calendar-grid-week-time-line-hour {
+        height: 0;
+    }
+
+    .kanban__wrapper .kanban__container .kanban__board {
+        border: none;
+        z-index: 0;
+    }
+
+    .kanban__board {
+        width: 125px;
+        margin-right: 5px;
+    }
+
+    .kanban__board-header-item:nth-child(1) .live-notes__header {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .taskcontent,
+    .live-notes__header {
+        width: 125px;
+        margin-right: 5px;
+    }
+
+    .live-notes__header {
+        padding: 13px 2px;
+        background: #ffff;
+        border-right: none;
+    }
+
+    .avatar {
+        height: 30px;
+        min-width: 30px;
+        max-width: 30px;
+    }
+
+    .live-notes__header--name {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .live-notes__header--time,
+    .live-notes__header--post {
+        display: none;
+    }
+
+    .taskcontent__theme {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 120%;
+    }
+
+    .taskcontent__person,
+    .taskcontent__phone {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .taskcontent__comentbox-text {
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 120%;
+    }
+
+    .arrowsbox-mobile {
+        display: flex;
+    }
+
+    .mobile-logobox {
+        display: flex;
+        justify-content: center;
+        margin-left: 13px;
+    }
+
+    .kanban__wrapper .kanban__container {
+        height: 2320px;
+        // top: -20px;
+    }
+
+    .hour-1 {
+        top: 100px;
+    }
+
+    .hour-2 {
+        top: 200px;
+    }
+
+    .hour-3 {
+        top: 300px;
+    }
+
+    .hour-4 {
+        top: 400px;
+    }
+
+    .hour-5 {
+        top: 500px;
+    }
+
+    .hour-6 {
+        top: 600px;
+    }
+
+    .hour-7 {
+        top: 700px;
+    }
+
+    .hour-8 {
+        top: 800px;
+    }
+
+    .hour-9 {
+        top: 900px;
+    }
+
+    .hour-10 {
+        top: 1000px;
+    }
+
+    .hour-11 {
+        top: 1100px;
+    }
+
+    .hour-12 {
+        top: 1200px;
+    }
+
+    .hour-13 {
+        top: 1300px;
+    }
+
+    .hour-14 {
+        top: 1400px;
+    }
+
+    .hour-15 {
+        top: 1500px;
+    }
+
+    .hour-16 {
+        top: 1600px;
+    }
+
+    .hour-17 {
+        top: 1700px;
+    }
+
+    .hour-18 {
+        top: 1800px;
+    }
+
+    .hour-19 {
+        top: 1900px;
+    }
+
+    .hour-20 {
+        top: 2000px;
+    }
+
+    .hour-21 {
+        top: 2100px;
+    }
+
+    .hour-22 {
+        top: 2200px;
+    }
+
+    .hour-23 {
+        top: 2300px;
+    }
+
+    .task-0 {
+        height: 197px;
+    }
+
+    .task-1 {
+        height: 197px;
+        top: 200px;
+    }
+
+    .task-2 {
+        height: 197px;
+        top: 400px;
+    }
+
+    .task-3 {
+        top: 600px;
+        height: 197px;
+    }
+
+    .datepicker__mobilebox {
+        display: flex;
+    }
+}

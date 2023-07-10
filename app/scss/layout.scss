@@ -5,9 +5,15 @@
     height: 100vh;
 
     &__sidebar {
-        width: 247px;
+        width: 262px;
         background: #F9F8FC;
         border-radius: 10px;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__logo {
@@ -17,9 +23,9 @@
             margin: 0 auto;
         }
     }
-    &__logomini img{
-        margin: 0 auto;
-        padding-top: 76px;
+
+    &__logomini img {
+        margin: 0 auto 5px;
     }
 
     &__datepicker {
@@ -34,7 +40,7 @@
     }
 
     &__content {
-        width: calc(100% - 287px);
+        width: calc(100% - 268px);
     }
 
     &__header {
@@ -48,10 +54,12 @@
         font-weight: 700;
         font-size: 36px;
         line-height: 130%;
+        margin-left: 43px;
     }
 
     &__controls {
         display: flex;
         gap: 20px;
+        margin-right: 180px;
     }
 }

@@ -29,5 +29,25 @@ $(function () {
     width: 'style',
     dropdownAutoWidth: true,
   });
+
+  function calcCurrentTimePx() {
+    let coefficient = 80;
+    if (window.innerWidth < 660) {
+      coefficient = 100;
+    }
+    
+    const date = new Date();
+    const hour = date.getHours();
+    const minutes = date.getMinutes();
+
+    const currentPx = (hour * coefficient) + ((coefficient / 60) * minutes)
+    $('.current-line').css({top: currentPx});
+  }
+
+  calcCurrentTimePx();
+
+  $( window ).on( "resize", function() {
+    calcCurrentTimePx();
+  } );
 });
 

@@ -1,6 +1,7 @@
 .arrowsbox {
     display: flex;
     gap: 14px;
+    margin-right: 180px;
 
     &__left {
         display: flex;
@@ -24,4 +25,12 @@
         justify-content: center;
         cursor: pointer;
     }
+}
+
+.arrowsbox-mobile {
+    display: none;
+    // display: flex;
+    justify-content: end;
+    margin-top: 13px;
+    margin-right: 34px;
 }

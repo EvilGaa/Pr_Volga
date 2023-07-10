@@ -1,0 +1,121 @@
+.hour-0 {
+    top: 0;
+}
+
+.hour-1 {
+    top: 80px;
+}
+
+.hour-2 {
+    top: 160px;
+}
+
+.hour-3 {
+    top: 240px;
+}
+
+.hour-4 {
+    top: 320px;
+}
+
+.hour-5 {
+    top: 400px;
+}
+
+.hour-6 {
+    top: 480px;
+}
+
+.hour-7 {
+    top: 560px;
+}
+
+.hour-8 {
+    top: 640px;
+}
+
+.hour-9 {
+    top: 720px;
+}
+
+.hour-10 {
+    top: 800px;
+}
+
+.hour-11 {
+    top: 880px;
+}
+
+.hour-12 {
+    top: 960px;
+}
+
+.hour-13 {
+    top: 1040px;
+}
+
+.hour-14 {
+    top: 1120px;
+}
+
+.hour-15 {
+    top: 1200px;
+}
+
+.hour-16 {
+    top: 1280px;
+}
+
+.hour-17 {
+    top: 1360px;
+}
+
+.hour-18 {
+    top: 1440px;
+}
+
+.hour-19 {
+    top: 1520px;
+}
+
+.hour-20 {
+    top: 1600px;
+}
+
+.hour-21 {
+    top: 1680px;
+}
+
+.hour-22 {
+    top: 1760px;
+}
+
+.hour-23 {
+    top: 1840px;
+}
+
+.timelineconst {
+    &__box {
+        width: calc(100% - 36px);
+        height: 8px;
+        position: absolute;
+        left: 38px;
+    }
+
+    &__line {
+        height: 3px;
+        background-color: #EE786B;
+        position: relative;
+    }
+
+    &__line::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #EE786B;
+    }
+}

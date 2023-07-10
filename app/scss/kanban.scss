@@ -1,0 +1,122 @@
+.kanban__wrapper {
+    height: calc(100vh - 194px);
+    overflow-x: auto;
+    overflow-y: auto;
+    // width: calc(100% + 183px);
+    width: 100%;
+    position: relative;
+}
+
+.kanban__wrapper .kanban__container {
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-max-content !important;
+    width: -moz-max-content !important;
+    width: max-content !important;
+    position: relative;
+    height: 1940px;
+}
+
+.kanban__wrapper .kanban__container,
+.kanban__container-header {
+    padding-left: 43px;
+}
+
+.kanban__wrapper .kanban__container .kanban__board {
+    background: transparent;
+    z-index: 0;
+}
+
+.kanban__timeline-box {
+    position: absolute;
+    // top: 20px;
+    left: 0;
+    z-index: 80;
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: 1;
+}
+
+.kanban__wrapper .kanban__container .kanban__board {
+    border: 1px solid #e8e9eb;
+    z-index: 160;
+}
+
+.kanban__wrapper-header .kanban__container {
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-max-content !important;
+    width: -moz-max-content !important;
+    width: max-content !important;
+}
+
+.kanban__board {
+    background: #d9dee3;
+}
+
+.kanban__board {
+    // padding-top: 20px;
+    background: #e2e4e6;
+    float: left;
+    width: 222px;
+    position: relative;
+    transition: all .3s cubic-bezier(.23, 1, .32, 1);
+    position: relative;
+    z-index: 2;
+}
+
+.kanban__wrapper .kanban__container .kanban__board .kanban-drag {
+    min-height: 1rem;
+    min-width: 16.25rem;
+    padding: 0;
+}
+
+.calendar-grid-week-time-line-hour {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 150;
+    height: 1px;
+    background: #e8e9eb;
+    opacity: 1;
+}
+
+.calendar-grid-week-time-line-hour.current-line {
+    height: 0;
+}
+
+.calendar-grid-week-time-line-hour-label {
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+    width: 35px;
+    vertical-align: middle;
+    text-align: right;
+    text-transform: uppercase;
+    line-height: 12px;
+    transform: translateY(-50%);
+    background: #fff;
+}
+
+.kanban__board-header {
+    position: sticky;
+}
+
+.kanban__container-header {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 190;
+}
+
+.kanban__board-header-item:nth-child(1) .live-notes__header {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.kanban__board-header-item:nth-last-child(1) .live-notes__header {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

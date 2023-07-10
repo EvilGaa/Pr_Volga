@@ -14,9 +14,11 @@
     line-height: 32px;
     color: #C4C4C4;
 }
-.air-datepicker-nav{
+
+.air-datepicker-nav {
     border: none;
 }
+
 .air-datepicker-nav--title,
 .air-datepicker-nav--title i {
     font-weight: 700;
@@ -38,4 +40,44 @@
     background: $red;
     border-radius: 8px;
     color: #fff;
+}
+
+.datepicker {
+    &__mobilebox {
+        display: none;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__datebox--active {
+        background: $red;
+        border-radius: 10px;
+        width: 40px;
+        height: 57px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__day {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #BCC1CD;
+    }
+
+    &__number {
+        color: #212525;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.datepicker__datebox--active .datepicker__day,
+.datepicker__datebox--active .datepicker__number {
+    color: white;
 }
